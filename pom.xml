@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.bsb.consume.common</groupId>
+  <artifactId>blazecommon</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>BlazeCommon</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <blaze.version>7.2.5</blaze.version>
+  </properties>
+  <dependencies>
+  	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-core</artifactId>
+    <version>1.3</version>
+    <scope>test</scope>
+</dependency>
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-beanutils</groupId>
+		<artifactId>commons-beanutils</artifactId>
+		<version>1.8.3</version>
+	</dependency>
+			<!-- blaze Dependencies -->
+		<dependency>
+			<groupId>com.fico.blaze</groupId>
+			<artifactId>AdvCommon</artifactId>
+			<version>${blaze.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fico.blaze</groupId>
+			<artifactId>Advisor</artifactId>
+			<version>${blaze.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fico.blaze</groupId>
+			<artifactId>AdvisorSvr</artifactId>
+			<version>${blaze.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fico.blaze</groupId>
+			<artifactId>InnovatorRT</artifactId>
+			<version>${blaze.version}</version>
+		</dependency>
+	    <dependency>
+	      	<groupId>com.fico.blaze</groupId>
+	      	<artifactId>license</artifactId>
+	      	<version>7.2</version>
+	    </dependency>
+  </dependencies>
+</project>
